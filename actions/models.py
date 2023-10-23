@@ -1,4 +1,5 @@
 from django.db import models
+
 from django.contrib.contenttypes.models import ContentType
 from django.contrib.contenttypes.fields import GenericForeignKey
 
@@ -24,3 +25,4 @@ class Action(models.Model):
             models.Index(fields=['target_ct', 'target_id']),
         ]
         ordering = ['-created']
+
